@@ -35,7 +35,7 @@ Se você deseja inspecionar ou clonar o código:
 
 1.  **Clone o Repositório:**
     ```bash
-    git clone [https://github.com/Li-code1/CV ](https://github.com/Li-code1/CV.git
+    git clone https://github.com/Li-code1/CV.git
     ```
 2.  **Entre no Diretório:**
     ```bash
