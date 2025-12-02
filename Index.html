@@ -1,168 +1,262 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 
-  <head>
+<head>
     <title>Liliane de Lima Santos - Desenvolvedora Front-End</title>
-    
+
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
+
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <style>
+        html,
+        body,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: "Roboto", sans-serif
+        }
 
-    <style>
-      html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+        /* -------------------------------------- */
+        /* NOVO: Estilos para o Dark Mode */
+        /* -------------------------------------- */
+        .w3-dark-mode,
+        .w3-dark-mode .w3-light-grey {
+            background-color: #121212 !important; /* Fundo escuro */
+            color: #e0e0e0 !important; /* Texto claro */
+        }
+
+        .w3-dark-mode .w3-white,
+        .w3-dark-mode .w3-card-4,
+        .w3-dark-mode .w3-card {
+            background-color: #1e1e1e !important; /* Cor de card mais escura */
+            box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.4), 0 4px 20px 0 rgba(0, 0, 0, 0.3) !important;
+        }
+        
+        /* Ajustar a cor do texto para títulos e corpos em dark mode */
+        .w3-dark-mode .w3-text-grey {
+            color: #e0e0e0 !important;
+        }
+
+        /* Cor da skill bar e outros elementos Teal (se precisar de ajuste para o contraste) */
+        .w3-dark-mode .w3-teal {
+            background-color: #00bcd4 !important; /* Cyan brilhante */
+            color: #1e1e1e !important; 
+        }
+
+        .w3-dark-mode hr {
+            border-color: #333 !important;
+        }
+
+        /* Botão do Dark Mode */
+        #darkModeToggle {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 1000;
+            cursor: pointer;
+            padding: 10px;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.8);
+            color: #333;
+            transition: background-color 0.3s, color 0.3s;
+            border: none;
+        }
+        .w3-dark-mode #darkModeToggle {
+            background-color: rgba(0, 0, 0, 0.6);
+            color: #eee;
+        }
     </style>
-    
-  </head>
 
-  <body class="w3-light-grey" cz-shortcut-listen="true">
-  
+</head>
+
+<body class="w3-light-grey" cz-shortcut-listen="true">
+    
+    <button id="darkModeToggle" title="Alternar Modo Escuro/Claro">
+        <i class="fas fa-sun"></i> </button>
+
     <div class="w3-content w3-margin-top" style="max-width:1400px;">
-  
-      <div class="w3-row-padding">
-  
-        <div class="w3-third">
-  
-          <div class="w3-white w3-text-grey w3-card-4">
-            <div class="w3-container">
-              <h2>Liliane de Lima Santos</h2>
-            </div>
-            <div class="w3-container">
-              <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Desenvolvedora Front-End</p>
-              <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Graduanda em Análise e Desenvolvimento de Sistemas</p>
-              <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>Esmeralda - Praia Grande - SP</p>
-              <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>lilianedelimasantos@yahoo.com.br</p>
-              <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>(13) 99607 9947</p>
-              <hr>
-  
-              <p class="w3-large">
-                <b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Skills Técnicas</b>
-              </p>
-              <p>HTML / CSS / JavaScript</p>
-              <div class="w3-light-grey w3-round-xlarge w3-small">
-                <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:70%">70%</div>
-              </div>
-              <p>Low-Code (Out Systems)</p>
-              <div class="w3-light-grey w3-round-xlarge w3-small">
-                <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:50%">50%</div>
-              </div>
-              <p>Metodologias Ágeis (Scrum/Kanban)</p>
-              <div class="w3-light-grey w3-round-xlarge w3-small">
-                <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:60%">60%</div>
-              </div>
-              <p>Banco de Dados SQL</p>
-              <div class="w3-light-grey w3-round-xlarge w3-small">
-                <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:40%">40%</div>
-              </div>
-              <br>
-  
-              <p class="w3-large w3-text-theme">
-                <b><i class="fa fa-globe fa-fw w3-margin-right w3-text-teal"></i>Idiomas</b>
-              </p>
-              <p>Português</p>
-              <div class="w3-light-grey w3-round-xlarge">
-                <div class="w3-round-xlarge w3-teal" style="height:24px;width:100%"></div>
-              </div>
-              <p>Inglês (Básico)</p>
-              <div class="w3-light-grey w3-round-xlarge">
-                <div class="w3-round-xlarge w3-teal" style="height:24px;width:30%"></div>
-              </div>
-              <br>
-            </div>
-          </div><br>
-  
-          </div>
-  
-        <div class="w3-twothird">
-    
-          <div class="w3-container w3-card w3-white w3-margin-bottom">
-            <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-terminal fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Resumo</h2>
-            <p>Profissional em transição de carreira com foco em Desenvolvimento Front-End. Possuo forte base em HTML, CSS e JavaScript, e estou me graduando em Análise e Desenvolvimento de Sistemas. Minha experiência anterior em atendimento ao cliente (Banco Itaú) e minha Pós-graduação em Liderança fornecem uma visão única para a experiência do usuário (UX) e trabalho em equipe. Busco aplicar minhas habilidades técnicas e interpessoais em projetos de desenvolvimento web.</p>
-          </div>
 
-          <div class="w3-container w3-card w3-white w3-margin-bottom">
-            <h2 class="w3-text-grey w3-padding-16">
-              <i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Histórico Profissional
-            </h2>
-            <div class="w3-container">
-              <h5 class="w3-opacity"><b>Residência em TI - Low-Code</b></h5>
-              <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>08/2025 - 11/2025</h6>
-              <p>Cargo: Residente - Instituto Ecoa Puc Rio</p>
-              <p>Desenvolvimento de sistemas utilizando a tecnologia low-code.</p>
-              <hr>
-            </div>
-            <div class="w3-container">
-              <h5 class="w3-opacity"><b>Caixa</b></h5>
-              <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>08/2007 - 12/2014</h6>
-              <p>Banco Itaú Unibanco SA</p>
-              <p>Atendimento ao cliente e vendas de produtos bancários. (Experiência transferível para foco no usuário/UX).</p>
-            </div>
-          </div>
-  
-          <div class="w3-container w3-card w3-white">
-            <h2 class="w3-text-grey w3-padding-16">
-              <i class="fa fa-graduation-cap fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Educação e Cursos
-            </h2>
-            <div class="w3-container">
-              <h5 class="w3-opacity"><b>Graduação em Análise e Desenvolvimento de Sistemas</b></h5>
-              <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>03/2025 - 12/2027</h6>
-              <p>Faculdade Imes EAD</p>
-              <hr>
-            </div>
-            <div class="w3-container">
-              <h5 class="w3-opacity"><b>Pós Graduação em Liderança e Trabalho em Equipe</b></h5>
-              <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>03/2012 - 06/2013</h6>
-              <p>Unibr Faculdade de São Vicente</p>
-              <hr>
-            </div>
-            <div class="w3-container">
-              <h5 class="w3-opacity"><b>Cursos Técnicos (Digital Innovation One, SOS Computadores)</b></h5>
-              <p>
-                Cursos em Html, Java Script, Css, Banco de Dados Sql, Python, C#, .NET, JAVA, Metodologia ágeis Scrum, Kanbam.
-              </p>
-              <ul>
-                <li>Informática avançada: Windows, Word, Excel, Access, Corel Draw 10, Pager Maker 7.0 e Internet.</li>
-                <li>Conhecimento em Prototipagem e Out Systems (Low-Code).</li>
-              </ul>
-            </div>
-          </div>
+        <div class="w3-row-padding">
 
-          <div class="w3-container w3-card w3-white w3-margin-bottom">
-            <h2 class="w3-text-grey w3-padding-16">
-              <i class="fa fa-code-fork fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Projetos Front-End
-            </h2>
-            <div class="w3-container">
-              <h6 class="w3-text-teal">
-                <i class="fa fa-github fa-fw w3-margin-right"></i>
-                <a href="https://github.com/Li-code1" target="_blank">Li-code1</a>
-              </h6>
-              <p>Desenvolvimento de Landing Pages (HTML, CSS, JS) para demonstrar habilidades em interfaces responsivas e usabilidade.</p>
-              <hr>
+            <div class="w3-third">
+
+                <div class="w3-white w3-text-grey w3-card-4">
+                    <div class="w3-container">
+                        <h2>Liliane de Lima Santos</h2>
+                    </div>
+                    <div class="w3-container">
+                        <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Desenvolvedora Front-End</p>
+                        <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Graduanda em Análise e Desenvolvimento de Sistemas</p>
+                        <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>Esmeralda - Praia Grande - SP</p>
+                        <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>lilianedelimasantos@yahoo.com.br</p>
+                        <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>(13) 99607 9947</p>
+                        <hr>
+
+                        <p class="w3-large">
+                            <b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Skills Técnicas</b>
+                        </p>
+                        <p>HTML / CSS / JavaScript</p>
+                        <div class="w3-light-grey w3-round-xlarge w3-small">
+                            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:70%">70%</div>
+                        </div>
+                        <p>Low-Code (Out Systems)</p>
+                        <div class="w3-light-grey w3-round-xlarge w3-small">
+                            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:65%">65%</div>
+                        </div>
+                        <p>Metodologias Ágeis (Scrum/Kanban)</p>
+                        <div class="w3-light-grey w3-round-xlarge w3-small">
+                            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:80%">80%</div>
+                        </div>
+                        <p>Banco de Dados SQL</p>
+                        <div class="w3-light-grey w3-round-xlarge w3-small">
+                            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:40%">40%</div>
+                        </div>
+                        <br>
+
+                        <p class="w3-large w3-text-theme">
+                            <b><i class="fa fa-globe fa-fw w3-margin-right w3-text-teal"></i>Idiomas</b>
+                        </p>
+                        <p>Português</p>
+                        <div class="w3-light-grey w3-round-xlarge">
+                            <div class="w3-round-xlarge w3-teal" style="height:24px;width:100%"></div>
+                        </div>
+                        <p>Inglês (Básico)</p>
+                        <div class="w3-light-grey w3-round-xlarge">
+                            <div class="w3-round-xlarge w3-teal" style="height:24px;width:30%"></div>
+                        </div>
+                        <br>
+                    </div>
+                </div><br>
+
             </div>
-            <div class="w3-container">
-              <h6 class="w3-text-teal">
-                <i class="fa fa-github fa-fw w3-margin-right"></i>
-                <a href="https://github.com/Li-code1" target="_blank"></a>
-              </h6>
-              <p></p>
+
+            <div class="w3-twothird">
+
+                <div class="w3-container w3-card w3-white w3-margin-bottom">
+                    <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-terminal fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Resumo</h2>
+                    <p>Profissional em transição de carreira focada em **Desenvolvimento Front-End** e graduanda em Análise e Desenvolvimento de Sistemas. Possuo sólida base em **HTML, CSS e JavaScript**, além de experiência prática em **Low-Code (Out Systems)** e **Metodologias Ágeis (Scrum/Kanban)** adquirida em Residência em TI. Minha Pós-graduação em Liderança e a experiência em **Atendimento ao Cliente (Banco Itaú)** me fornecem uma visão apurada para **Experiência do Usuário (UX)** e trabalho colaborativo, buscando aplicar essas habilidades na criação de interfaces eficientes e centradas no usuário.</p>
+                </div>
+
+                <div class="w3-container w3-card w3-white w3-margin-bottom">
+                    <h2 class="w3-text-grey w3-padding-16">
+                        <i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Histórico Profissional
+                    </h2>
+                    <div class="w3-container">
+                        <h5 class="w3-opacity"><b>Residência em TI - Low-Code</b></h5>
+                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>08/2025 - 11/2025</h6>
+                        <p>Cargo: Residente - Instituto Ecoa Puc Rio</p>
+                        <p>Desenvolvimento de sistemas utilizando a tecnologia low-code.</p>
+                        <hr>
+                    </div>
+                    <div class="w3-container">
+                        <h5 class="w3-opacity"><b>Caixa (Banco Itaú Unibanco SA)</b></h5>
+                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>08/2007 - 12/2014</h6>
+                        <p>Atendimento ao cliente e vendas de produtos bancários, experiência valiosa em **foco no usuário (UX)**, comunicação e resolução de problemas.</p>
+                    </div>
+                </div>
+
+                <div class="w3-container w3-card w3-white">
+                    <h2 class="w3-text-grey w3-padding-16">
+                        <i class="fa fa-graduation-cap fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Educação e Cursos
+                    </h2>
+                    <div class="w3-container">
+                        <h5 class="w3-opacity"><b>Graduação em Análise e Desenvolvimento de Sistemas</b></h5>
+                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>03/2025 - 12/2027</h6>
+                        <p>Faculdade Imes EAD</p>
+                        <hr>
+                    </div>
+                    <div class="w3-container">
+                        <h5 class="w3-opacity"><b>Pós Graduação em Liderança e Trabalho em Equipe</b></h5>
+                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>03/2012 - 06/2013</h6>
+                        <p>Unibr Faculdade de São Vicente</p>
+                        <hr>
+                    </div>
+                    <div class="w3-container">
+                        <h5 class="w3-opacity"><b>Cursos Técnicos (Digital Innovation One, SOS Computadores)</b></h5>
+                        <p>
+                            Foco em desenvolvimento web (Html, JavaScript, Css), Banco de Dados Sql, Python. Conhecimento em Metodologia ágeis (Scrum, Kanban).
+                        </p>
+                        <ul>
+                            <li>Informática avançada: Windows, Word, Excel, Access, Corel Draw 10, Pager Maker 7.0 e Internet.</li>
+                            <li>Conhecimento em Prototipagem e Out Systems (Low-Code).</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="w3-container w3-card w3-white w3-margin-bottom">
+                    <h2 class="w3-text-grey w3-padding-16">
+                        <i class="fa fa-code-fork fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Projetos Front-End
+                    </h2>
+                    <div class="w3-container">
+                        <h6 class="w3-text-teal">
+                            <i class="fa fa-github fa-fw w3-margin-right"></i>
+                            <a href="https://github.com/Li-code1" target="_blank">Repositório GitHub (Li-code1)</a>
+                        </h6>
+                        <p>Desenvolvimento de Landing Pages (HTML, CSS, JS) e ferramentas interativas (ex: Roda da Vida, Especificação de Objetivos) para demonstrar habilidades em interfaces responsivas e usabilidade.</p>
+                    </div>
+                </div>
+
             </div>
-          </div>
-  
-          </div>
-  
+
         </div>
-  
-      </div>
-  
-    <footer class="w3-container w3-teal w3-center w3-margin-top">
-      <p>Minhas Redes Profissionais</p>
-      <a href="https://github.com/Li-code1" target="_blank"><i class="fa fa-github w3-hover-opacity"></i></a>
-      <a href="https://www.linkedin.com/in/liliane-lima-psicanalista" target="_blank"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
-      <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
-    </footer>
-  
-  </body>
 
-            </html>
+    </div>
+
+    <footer class="w3-container w3-teal w3-center w3-margin-top">
+        <p>Minhas Redes Profissionais</p>
+        <a href="https://github.com/Li-code1" target="_blank"><i class="fa fa-github w3-hover-opacity"></i></a>
+        <a href="https://www.linkedin.com/in/liliane-lima-psicanalista" target="_blank"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+        <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const toggleButton = document.getElementById('darkModeToggle');
+            const body = document.body;
+            const icon = toggleButton.querySelector('i');
+            const DARK_MODE_KEY = 'darkModeEnabled';
+
+            // Função para aplicar o modo
+            function applyDarkMode(isEnabled) {
+                if (isEnabled) {
+                    body.classList.add('w3-dark-mode');
+                    icon.classList.remove('fa-sun');
+                    icon.classList.add('fa-moon');
+                    toggleButton.title = 'Alternar Modo Claro';
+                    localStorage.setItem(DARK_MODE_KEY, 'enabled');
+                } else {
+                    body.classList.remove('w3-dark-mode');
+                    icon.classList.remove('fa-moon');
+                    icon.classList.add('fa-sun');
+                    toggleButton.title = 'Alternar Modo Escuro';
+                    localStorage.setItem(DARK_MODE_KEY, 'disabled');
+                }
+            }
+
+            // 1. Verificar preferência salva ao carregar a página
+            const savedPreference = localStorage.getItem(DARK_MODE_KEY);
+            const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+            if (savedPreference === 'enabled' || (savedPreference === null && prefersDark)) {
+                applyDarkMode(true);
+            } else {
+                applyDarkMode(false);
+            }
+
+            // 2. Adicionar listener para o clique no botão
+            toggleButton.addEventListener('click', () => {
+                const isEnabled = body.classList.contains('w3-dark-mode');
+                applyDarkMode(!isEnabled);
+            });
+        });
+    </script>
+
+</body>
+
+</html>
