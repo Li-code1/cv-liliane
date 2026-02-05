@@ -46,8 +46,8 @@ Se você deseja inspecionar ou clonar o código:
 
 ## 🤝 Contato
 
-Estou sempre aberta a novas conexões e oportunidades na área de Desenvolvimento Front-End.
+Estou sempre aberta a novas conexões e oportunidades na área de Desenvolvimento.
 
-* **LinkedIn:** [https://www.linkedin.com/in/liliane-lima-psicanalista](https://www.linkedin.com/in/liliane-lima-psicanalista)
+* **LinkedIn:** [https://www.linkedin.com/in/liliane-lima-ti](https://www.linkedin.com/in/liliane-lima-ti)
 * **GitHub:** [https://github.com/Li-code1](https://github.com/Li-code1)
-* **E-mail:** lilianedelimasantos@yahoo.com.br
+* **E-mail:** li.lima662@gmail.com
